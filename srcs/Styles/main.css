@@ -136,3 +136,20 @@ html{
     fill: var(--mainYellow);
     background-color: white;
 }
+
+#listWhoKnow, #titleWhyPingo{
+    transition: 500ms ease-in-out;
+    display: absolute;
+}
+#imageWhyPingo{
+    transition: 580ms ease-in-out;
+    display: absolute;
+}
+#whyPXTH1{
+    transition: 610ms ease-in-out;
+    display: absolute;
+}
+#whyPTXTP{
+    transition: 700ms ease-in-out;
+    display: absolute;
+}
