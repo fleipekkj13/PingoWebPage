@@ -1,0 +1,23 @@
+footer{
+
+    margin-top: 5em;
+    width: 100%;
+    background-color: var(--mainYellow);
+}
+.main-footer{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.main-footer h1{
+    font-size: 2em;
+}
+.main-footer-div{
+    display: flex;
+}
+.main-footer-div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

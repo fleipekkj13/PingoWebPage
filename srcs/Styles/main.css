@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 main{
     position: relative;
-    width: 100%;
-    height: 100vh;
-    
-    background-color: var(--mainYellow);
-
+    width: 100%;    
 }
 
 body,
@@ -23,6 +19,9 @@ html{
     width: 100%;
     height: 100%;
     position: relative;
+
+    background-color: var(--mainYellow);
+    
 }
 .principal{
     position: relative;
@@ -54,6 +53,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 10%;
 }
 .headline h1{
     font-size: 3em;
@@ -134,4 +134,5 @@ html{
 
 #elementor{
     fill: var(--mainYellow);
+    background-color: white;
 }
