@@ -13,7 +13,7 @@ function defScroll(){
         whoWorks.style.transform = "translateY(0px)"
         whoWorks.style.opacity = 1
     } else{
-        whoWorks.style.transform = "translateY(-10px)"
+        whoWorks.style.transform = "translateY(-30px)"
         whoWorks.style.opacity = 0
     }
 
@@ -29,15 +29,14 @@ function defScroll(){
         whyPTXTP.style.opacity = 1
     
     } else {
-        titleWhyPing.style.transform = "translateY(-20px)"
+        titleWhyPing.style.transform = "translateY(-30px)"
+        imageWhyPing.style.transform = "translateX(-100px)"
+        whyPXTH1.style.transform = "translateY(100px)"
+        whyPTXTP.style.transform = "translateY(-30px)"
         titleWhyPing.style.opacity = 0
-
-        imageWhyPing.style.transform = "translateY(-20px)"
-        imageWhyPing.style.opacity = 0
-        whyPXTH1.style.transform = "translateY(-20px)"
-        whyPXTH1.style.opacity = 0
-        whyPTXTP.style.transform = "translateY(-20px)"
         whyPTXTP.style.opacity = 0
+        whyPXTH1.style.opacity = 0
+        imageWhyPing.style.opacity = 0
 
     }
 

@@ -4,7 +4,7 @@
     background-color: white;
 }
 .main-cintent-whySelectPingo{
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
 
     display: flex;
@@ -30,24 +30,40 @@
 .image-WhyPingo{
     width: 100%;
     margin-right: 1em;
+
+    position: relative;
+
 }
 
 .image-WhyPingo img{
-    width: 100%;
+    width: 90%;
 }
 
-.text-WhyPingo button{
+.text-WhyPingo a{
+
+    position: relative;
+
     width: 50%;
     background-color: var(--mainYellow);
     border: none;
     color: white;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
+
+    transition: .2s ease-in-out;
+
+}
+.text-WhyPingo a:hover{
+
+    scale: 2;
+
+    box-shadow: 0 0 15px var(--mainYellow);
 }
 
 .text-WhyPingo{
     text-align: left;
+    font-size: 20px;
 }
 
 .text-WhyPingo h1{
@@ -56,4 +72,9 @@
 
 .text-WhyPingo{
     width: 100%;
+}
+
+#whyPingo{
+    padding-bottom: 10em;
+    padding-top: 5em;
 }

@@ -1,0 +1,47 @@
+.whoIsPinho{
+ position: relative;
+ width: 100%;
+ background-color: var(--mainYellow);
+}
+
+.main-content-whoIsPingo {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.textWhoIs img{
+    width: 100%;
+}
+.image-whoIs{
+    width: 80%;
+    text-align: left;
+}
+
+.image-whoIs h1{
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.image-whoIs p{
+
+
+    width: 85%;
+    font-size: 20px;
+}
+
+.image-whoIs h2{
+    font-size: 2em;
+}
+
+#elementWho{
+    fill: white;
+}

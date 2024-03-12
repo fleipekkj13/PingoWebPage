@@ -9,6 +9,9 @@ body,
 html{
     padding: 0;
     margin: 0;
+
+    scroll-behavior: smooth;
+
     box-sizing: border-box;
 
     font-family: 'Outfit', sans-serif;
@@ -25,7 +28,7 @@ html{
 }
 .principal{
     position: relative;
-    width: 85%;
+    width: 75%;
     height: 100%;
 
     margin: 0 auto;
@@ -63,7 +66,6 @@ html{
 .active{
 
     color: white;
-
     position: relative;
     left: 10px;
     animation: showed 1490ms ease-in-out infinite;
@@ -103,6 +105,8 @@ html{
     padding: 10px;
     width: 30%;
 
+    position: relative;
+
     margin: 30px 0 15px 0;
 
     border-radius: 20px;
@@ -113,7 +117,8 @@ html{
 }
 
 .headline a:hover{
-    scale: 1.02;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    scale: 1.05;
 }
 
 
@@ -140,6 +145,7 @@ html{
 #listWhoKnow, #titleWhyPingo{
     transition: 500ms ease-in-out;
     display: absolute;
+    opacity: 0;
 }
 #imageWhyPingo{
     transition: 580ms ease-in-out;
