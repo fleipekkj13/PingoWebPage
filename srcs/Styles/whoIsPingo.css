@@ -1,4 +1,4 @@
-.whoIsPinho{
+.whoIsPingo{
  position: relative;
  width: 100%;
  background-color: var(--mainYellow);
@@ -17,11 +17,20 @@
     text-align: center;
 }
 
+#secWhoIs{
+    margin-top: 20em;
+}
+
+
 .textWhoIs img{
     width: 100%;
 }
 .image-whoIs{
     width: 80%;
+
+    margin-left: 5em;
+    margin-right: 5em;
+    
     text-align: left;
 }
 
@@ -33,9 +42,11 @@
 
 .image-whoIs p{
 
-
-    width: 85%;
     font-size: 20px;
+}
+
+.image-whoIs:nth-child(2){
+    text-align: right;
 }
 
 .image-whoIs h2{
