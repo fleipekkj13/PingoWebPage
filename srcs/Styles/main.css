@@ -1,6 +1,7 @@
 main{
     width: 100%;
     position: relative;
+    background-color: var(--main-yellow);
 }
 .main-body{
     width: 100%;
@@ -15,7 +16,6 @@ main{
 
     position: relative;
     height: 80vh;
-    background-color: var(--main-yellow);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -124,4 +124,91 @@ main{
     padding: 5px;
     background-color: black;
     border-radius: 20px;
+}
+
+/*
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+*/
+
+.atencao{
+
+    background-color: white;
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 15em;
+
+    text-align: center;
+
+}
+.atencao-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.atencao-container h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.cards-container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 6em;
+    border: 1px solid black;
+
+    transition: .2s linear;
+
+}
+
+.cards-container-main:hover{
+    scale: 1.02;
+}
+
+
+
+.cards-container-main a{
+    text-decoration: none;
+    color: black;
+}
+.left-atencao{
+    width: 100%;
+}
+
+.left-atencao img{
+    width: 50%;
+}
+
+.right-atencao{
+    width: 100%;
+    text-align: left;
+
+}
+
+.atencao-container-ul{
+    padding: 0;
+    display: flex;
+    margin: 1em;
+    align-items: center;
+
+}
+.atencao-container-ul p{
+    font-size: 18px;
+}
+.atencao-container-ul h2, p{
+    width: 100%;
+    text-align: left;
 }
