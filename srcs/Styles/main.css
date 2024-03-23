@@ -1,163 +1,127 @@
-/*https://pingodesign.com.br/wp-content/uploads/2021/07/logotopo.png*/
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 main{
-    position: relative;
-    width: 100%;    
-}
-
-body,
-html{
-    padding: 0;
-    margin: 0;
-
-    scroll-behavior: smooth;
-
-    box-sizing: border-box;
-
-    font-family: 'Outfit', sans-serif;
-
-
-}
-.main-container{
     width: 100%;
-    height: 100%;
     position: relative;
-
-    background-color: var(--mainYellow);
-    
 }
-.principal{
-    position: relative;
-    width: 75%;
-    height: 100%;
-
+.main-body{
+    width: 100%;
     margin: 0 auto;
-
-}
-
-
-
-.principal-container{
-
-    display: flex;
-    align-items: center;
-    justify-self: center;
-
-    height: 100%;
     position: relative;
-    width: 100%;
-}
-.main-content-principal{
-    width: 100%;
-    text-align: center;
-}
-
-.headline{
-    text-align: center;
-    padding: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-top: 10%;
-}
-.headline h1{
-    font-size: 3em;
-    margin: 0;
 }
 
-.active{
+.first-item-section{
+    width: 100%;
 
-    color: white;
     position: relative;
-    left: 10px;
-    animation: showed 1490ms ease-in-out infinite;
+    height: 80vh;
+    background-color: var(--main-yellow);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
 }
 
-.peoples-how-works ul{
-    display: flex;
-    gap: 2em;
-    opacity: 1;
-    padding: 0;
-    justify-content: space-between;
+.first-item-section-container{
+    width: 80%;
+}
 
+.first-item-section h1{
+    font-size: 50px;
+
+    position: relative;
+    top: -50%;
+    margin: 0;
+    font-weight: 900;
+}
+
+.first-item-section h2{
     font-size: 15px;
 }
 
-.peoples-how-works img{
-    width: 70%;
-    border-radius: 100%;
+.simple-url-first-item li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-}
+    width: 50%;
 
-.peoples-how-works li:hover{
-    transition: 200ms ease-in-out;
-    scale: 1.05;
-}
-
-.peoples-how-works{
-    position: relative;
-    width: 80%;
     margin: 0 auto;
-    padding-top: 5em;
+    gap: 2em;
 }
 
-.headline a{
+.simple-url-first-item{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.simple-url-first-item a{
+    color: rgb(56, 32, 0);
     background-color: white;
     font-size: 20px;
-    padding: 10px;
-    width: 30%;
-
-    position: relative;
-
-    margin: 30px 0 15px 0;
-
-    border-radius: 20px;
     font-weight: bolder;
-
-    transition: 120ms ease-in-out;
+    padding: .5em;
+    text-decoration: none;
+    
+    width: 100%;
+    
+    border-radius: 50px;
+    transition: .2s linear;
 
 }
 
-.headline a:hover{
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+.simple-url-first-item a:hover{
     scale: 1.05;
+    box-shadow: 0 0 20px white;
 }
 
-
-@keyframes showed {
-    0%{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    50%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(20px);
-    }
+.simple-url-first-item a:nth-child(2){
+    background-color: black;
+    color: white;
 }
 
-#elementor{
-    fill: var(--mainYellow);
-    background-color: white;
+.parceiros-header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 50px;
+
+    width: 530px;
+
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    top: 55%;
+
 }
 
-#listWhoKnow, #titleWhyPingo{
-    transition: 500ms ease-in-out;
-    display: absolute;
-    opacity: 0;
+.parceiros-header h2{
+    padding: 5px;
+    margin: 2px;
 }
-#imageWhyPingo{
-    transition: 580ms ease-in-out;
-    display: absolute;
-}
-#whyPXTH1{
-    transition: 610ms ease-in-out;
-    display: absolute;
-}
-#whyPTXTP{
-    transition: 700ms ease-in-out;
-    display: absolute;
+
+.parceiros-header h2:nth-child(1){
+    color: var(--main-yellow);
+    display: flex;
+    padding: 5px;
+    background-color: black;
+    border-radius: 20px;
 }

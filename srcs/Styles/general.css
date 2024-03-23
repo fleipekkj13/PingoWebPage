@@ -1,0 +1,18 @@
+/*General CSS Configs */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --main-yellow: #fcb900;
+    --yellow-shadow:#d18b00;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    height: 100%;
+
+    font-family: 'Nunito', sans-serif;
+
+}
