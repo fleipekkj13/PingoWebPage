@@ -66,3 +66,7 @@ header{
     text-align: center;
     list-style: none;
 }
+
+.nav-ultimate .active{
+    color: var(--main-yellow);
+}
