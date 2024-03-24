@@ -5,7 +5,7 @@
     z-index: 10;
     right: 50px;
     bottom: 50px;
-    background-color: rgb(142, 230, 0);
+    background-color: #25d366;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ main{
     width: 100%;
 
     position: relative;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -84,6 +84,7 @@ main{
     gap: 2em;
 }
 
+
 .simple-url-first-item{
     display: flex;
     padding: 0;
@@ -108,16 +109,33 @@ main{
     text-decoration: none;
     
     width: 100%;
-    
-    border-radius: 50px;
-    transition: .2s linear;
-
+    transition: 250ms linear;
+    border-radius: 10px;
 }
 
+.simple-url-first-item a:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--green-whats);
+    border-radius: 10px;
+    z-index: -1;
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.simple-url-first-item a:hover::before,
+.simple-url-first-item a:focus::before{
+    transform: scaleX(1);    
+}
 .simple-url-first-item a:hover{
-    scale: 1.05;
-    box-shadow: 0 0 20px white;
+    color: white;
+    scale: 1.02;
 }
+
 
 .simple-url-first-item a:nth-child(2){
     background-color: black;
@@ -128,7 +146,7 @@ main{
     display: flex;
     align-content: center;
     justify-content: center;
-
+    
     border: 2px solid black;
     padding: 2px;
     border-radius: 50px;
@@ -308,16 +326,12 @@ main{
     font-size: 20px;
 }
 
-.cases-clientes-section{
-    padding-bottom: 10em;
-}
-
 .scoller{
     margin: 0 auto;
     max-width: 100%;
-
+    
     padding-block: 5em  ;
-
+    
     overflow: hidden;
     mask: linear-gradient(90deg,transparent, white, white 80%, transparent);
 }
@@ -361,9 +375,248 @@ main{
     gap: 1em;
     grid-template-columns: auto auto;
 }
+
+
+
 .cases-clientes-section li{
+    background-color: var(--main-yellow);
+    border: white solid 10px;
+    outline: 5px solid green;
     list-style: none;
     padding: 1em;
     border-radius: 10px;
     width: 100%;
+}
+
+.casesDeSucesso{
+    width: 100%;
+    background-color: white;
+    padding-block: 10em;
+
+}
+
+
+.cases-clientes-section{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10em;
+}
+
+
+
+.clientes-exemplos{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.clientes-exemplos ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    gap: 5em;
+
+    margin: 0 auto;
+}
+.clientes-exemplos li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+
+    border: 1px solid rgb(228, 228, 228);
+
+    box-shadow: 0 .5px 20px rgb(218, 218, 218);
+
+    transition: 150ms linear;
+
+    max-width: 450px;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.clientes-exemplos li:hover{
+    scale: 1.02;
+}
+
+.carder{
+    border-radius: 20px 20px 0 0 ;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.clientes-exemplos li a{
+    background-color: var(--main-yellow);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.logo-cl{
+
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100px);
+    max-width: 120px;
+    max-height: 120px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 100%;
+    border: solid 2px rgb(230, 230, 230);
+
+
+
+}
+.logo-cl img{
+    background-color: white;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.clientes-exemplos li:nth-child(1) .carder{
+    backdrop-filter: blur(20px);
+    background-image: url(../images/ApolloAtacadoCard.png);
+}
+.clientes-exemplos li:nth-child(2) .carder{
+    background-image: url(../images/MommyBolosCard.jpg);
+    background-position-y: -200px;
+}
+.clientes-exemplos li:nth-child(3) .carder{
+    background-image: url(../images/AiqFruta.jpg);
+}
+
+.sucesso-cases{
+    display: flex;
+    text-align: left;
+}
+
+.clientes-exemplos p{
+    width: 100%;
+    text-align: center;
+}
+
+#elementor{
+    display: none;
+    fill: var(--main-yellow);
+    background-color: white;
+}
+
+#elementor2{
+    display: none;
+    fill: var(--main-yellow);
+    background-color: white;
+    border: none;
+    rotate: 180deg;
+}
+
+.trqsec {
+    width: 100%;
+    background-color: white;
+}
+.trq{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.trq a{
+
+    width: 40%;
+
+    margin: 0 auto;
+
+    background-color: var(--main-yellow);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+    transition: 150ms linear;
+
+}
+
+.trq a:hover{
+    box-shadow: 0 0 20px var(--main-yellow);
+    scale: 1.02;
+}
+#alg{
+    font-size: 50px;
+}
+
+
+/* ---------- */
+
+.get-lead{
+    background-color: white;
+    width: 100%;
+}
+.main-lead-get{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-block: 3em;
+}
+.main-lead-get h2:nth-child(1){
+    font-size: 40px;
+}
+.main-lead-get h3{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5em;
+}
+.main-lead-get h2{
+    margin: 0;
+}
+
+.main-lead-get form{
+
+
+    padding: 20px;
+
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-lead-get input[type=text]{
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid 1px rgb(173, 173, 173);
+    padding: 10px;
+}
+
+.main-lead-get button{
+    border: none;
+    background-color: var(--main-yellow);
+    border: 20px;
+    width: 50%;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
 }
