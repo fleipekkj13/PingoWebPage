@@ -539,6 +539,13 @@ main{
     flex-direction: column;
 }
 
+.trq h2{
+    font-weight: 300;
+    width: 85%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
 .trq a{
 
     width: 40%;
@@ -550,7 +557,7 @@ main{
     text-decoration: none;
     color: white;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-weight: bolder;
     transition: 150ms linear;
 
