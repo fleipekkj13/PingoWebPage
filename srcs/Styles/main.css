@@ -239,11 +239,11 @@ main{
 
     background-color: white;
 
-    transition: 150ms ease-in-out;
-
+    transition: 350ms linear;
 }
 
 .cards-container-main:hover{
+    transition: 150ms ease-in-out;
     scale: 1.02;
     background-color: var(--main-yellow);
     border-color: #d58300;
@@ -626,4 +626,8 @@ main{
     font-size: 14px;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
+}
+
+#case1, #case2{
+    transition: 450ms ease-in-out;
 }
