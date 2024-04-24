@@ -26,6 +26,9 @@ header{
 
 }
 
+.navigate-heaer-mobile {
+    display: none;
+}
 
 
 .navigate-header a{
